@@ -14,12 +14,12 @@ import s from './HW7.module.css'
 // // export type ArrAllType = {
 // //     arr: ArrType[]
 // // }
-// export type ArrType = {
-//     id: number
-//     value: string
-// }
+export type ArrType = {
+    id: number
+    value: string
+}
 
-const arr = [
+const arr: Array<ArrType> = [
     {id: 1, value: 'x'},
     {id: 2, value: 'y'},
     {id: 3, value: 'z'},
