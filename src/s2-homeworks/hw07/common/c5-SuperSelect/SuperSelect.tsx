@@ -1,7 +1,7 @@
 import React, {
     SelectHTMLAttributes,
     DetailedHTMLProps,
-    ChangeEvent,
+    ChangeEvent, ReactNode,
 } from 'react'
 import s from './SuperSelect.module.css'
 import {ArrType} from "../../HW7";
@@ -21,7 +21,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
                                                          onChangeOption,
                                                          ...restProps
                                                      }) => {
-    const mappedOptions: any[] = options
+    const mappedOptions: ReactNode[] = options
         ? options.map((o) => (
             <option
                 id={'hw7-option-' + o.id}

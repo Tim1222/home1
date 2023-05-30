@@ -1,4 +1,4 @@
-import React, {ChangeEvent, DetailedHTMLProps, HTMLAttributes, InputHTMLAttributes,} from 'react'
+import React, {ChangeEvent, DetailedHTMLProps, HTMLAttributes, InputHTMLAttributes, ReactNode,} from 'react'
 import s from './SuperRadio.module.css'
 import {Simulate} from "react-dom/test-utils";
 import {ArrType} from "../../HW7";
@@ -36,7 +36,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
     const finalRadioClassName = s.radio + (className ? ' ' + className : '')
     const spanClassName = s.span + (spanProps?.className ? ' ' + spanProps.className : '')
 
-    const mappedOptions: any[] = options
+    const mappedOptions: ReactNode[] = options
         ? options.map((o: ArrType) => (
             <label key={name + '-' + o.id} className={s.label}>
                 <input
