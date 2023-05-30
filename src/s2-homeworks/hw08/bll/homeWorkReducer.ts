@@ -38,10 +38,3 @@ export const homeWorkReducer = (state: Array<UserType>, action: ActionType): Arr
             return state
     }
 }
-
-
-// export const checkAC = (age: number) => {
-//     return {type: "check", payload: age} as const
-// }
-//
-// type checkAction = ReturnType<typeof checkAC>
